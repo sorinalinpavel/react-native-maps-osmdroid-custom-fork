@@ -1,0 +1,91 @@
+{
+  "_from": "react-native-maps-osmdroid",
+  "_id": "react-native-maps-osmdroid@0.23.0-rc4",
+  "_inBundle": false,
+  "_integrity": "sha512-9soWeBEA3aAeMjt8sWEeJ1NBdtRPde9KJL6EH1GPDSrpVY+CTznEMDys/T5M2yZxgkyZrJju5pR8gvcB+Dn2nw==",
+  "_location": "/react-native-maps-osmdroid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-maps-osmdroid",
+    "name": "react-native-maps-osmdroid",
+    "escapedName": "react-native-maps-osmdroid",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-maps-osmdroid/-/react-native-maps-osmdroid-0.23.0-rc4.tgz",
+  "_shasum": "7cc4c9bb344d8a3c30b098a030f9d500308885c8",
+  "_spec": "react-native-maps-osmdroid",
+  "_where": "/Users/sorinalinpavel/Desktop/Projects/winkGO",
+  "author": {
+    "name": "fqborges",
+    "email": "fqborges@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fqborges/react-native-maps/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React Native Mapview component for iOS + Android",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-module-resolver": "^2.3.0",
+    "babel-preset-airbnb": "^1.1.1",
+    "babel-preset-react-native": "1.9.0",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-prefer-object-spread": "^1.1.0",
+    "eslint-plugin-react": "^6.1.2",
+    "gitbook-cli": "^2.3.0",
+    "lodash": "^4.17.2",
+    "prop-types": "^15.5.10",
+    "react": "^16.3.2",
+    "react-native": "^0.54"
+  },
+  "homepage": "https://github.com/fqborges/react-native-maps#readme",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-component",
+    "map",
+    "mapview",
+    "google-maps",
+    "mapkit",
+    "osmdroid",
+    "openstreetmaps"
+  ],
+  "main": "index.js",
+  "name": "react-native-maps-osmdroid",
+  "peerDependencies": {
+    "react": ">= 16.0 || < 17.0",
+    "react-native": ">= 0.51",
+    "prop-types": "^15.0 || ^16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fqborges/react-native-maps.git"
+  },
+  "scripts": {
+    "build": "npm run build:js && npm run build:android && npm run build:ios",
+    "build:android": "./gradlew :react-native-maps:assembleDebug",
+    "build:ios": "bundle install --path ./example/ios/bundles && bundle exec pod install --project-directory=./example/ios/",
+    "build:js": "exit 0",
+    "ci": "npm run lint",
+    "lint": "eslint ./",
+    "preversion": "./scripts/update-version.js",
+    "run:android": "./gradlew installDebug && npm run start:android",
+    "run:ios": "react-native run-ios --project-path ./example/ios",
+    "run:packager": "./node_modules/react-native/scripts/packager.sh",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start:android": "adb shell am start -n com.airbnb.android.react.maps.example/.MainActivity"
+  },
+  "version": "0.23.0-rc4"
+}
